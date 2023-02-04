@@ -1,5 +1,5 @@
 {
-  "compilerOptions": {
+	"compilerOptions": {
 		"baseUrl": "./src",
 		"paths": {
 			"@components/*": ["./components/*"],
@@ -8,10 +8,13 @@
 			"@hooks/*": ["./hooks/*"],
 			"@assets/*": ["./assets/*"],
 			"@types/*": ["./types/*"],
+			"@routes/*": ["./routes/*"],
 			"@config/*": ["./config/*"],
 			"@services/*": ["./services/*"],
-			"@styles/*": ["./styles/*"],
-		}
+			"@styles/*": ["./styles/*"]
+		},
+		"declaration": true,
+		"declarationDir": "./types"
 	},
-  "extends": "expo/tsconfig.base"
+	"extends": "expo/tsconfig.base"
 }
